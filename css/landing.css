@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
-
 :root {
     --bg: #52516B;
     --text: white;
@@ -7,8 +6,46 @@
     --nav-hover-bg: rgb(228, 228, 228);
     --nav-text: #3a3a3a;
     --nav-active-text: white;
-    --nav-item-width: 25%;
-    --featured-item-width: 33.33%;
+    --nav-item-width: 33.33%;
+    --featured-grid-item-width: 33.33%;
+}
+
+@media only screen and (max-width: 700px) {
+    .grid-wrapper{
+        display: block !important;
+    }
+    .grid-title{
+        font-size: 3vh !important;
+    }
+    .grid-desc{
+        font-size: 1.6vh !important;
+    }
+    .grid-item{
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+    }
+    .grid-item:hover{
+        background-color: var(--bg) !important;
+        color: var(--text) !important;
+    }
+    .grid-item img{
+        margin-left: auto;
+        margin-right: auto;
+        padding: auto;
+    }
+    .section-container{
+        border-top: none !important;
+    }
+    .section-title{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center;
+        display: block !important
+    }
+    .landing-slogan{
+        width: 100% !important;
+    }
 }
 
 html, body
@@ -95,21 +132,21 @@ hr{
     padding-left: 1em;
     padding-right: 1em;
 }
-.featured-wrapper{
+.grid-wrapper{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.2vh;
     display: flex;
 }
-.featured-title{
-    font-size: 2.5vw;
+.grid-title{
+    font-size: calc(60% + 1vw);
 }
-.featured-desc{
-    font-size: 1.1vw;
+.grid-desc{
+    font-size: calc(30% + 1vw);
 }
-.featured-item{
-    width: var(--featured-item-width);
+.grid-item{
+    width: var(--featured-grid-item-width);
     text-align: center;
     text-decoration: none;
     color: var(--text);
@@ -117,11 +154,10 @@ hr{
     padding-top: 2em;
     padding-bottom: 2em;
 }
-.featured-item img{
-    max-width: 75%;
-    max-height: 75%;
+.grid-item img{
+    width: 75%
 }
-.featured-item:hover{
+.grid-item:hover{
     background-color: var(--text);
     color: var(--bg);
     transition: background-color 250ms, color 250ms;
