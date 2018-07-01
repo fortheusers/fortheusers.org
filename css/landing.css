@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+
+:root {
+    --bg: #52516B;
+    --text: white;
+    --nav-bg: #eee;
+    --nav-hover-bg: rgb(228, 228, 228);
+    --nav-text: #3a3a3a;
+    --nav-active-text: white;
+    --nav-item-width: 25%;
+    --featured-item-width: 33.33%;
+}
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.pageslider-nav{
+    background: var(--nav-bg);
+    overflow: hidden;
+    width: 100%;
+    margin: 0, 0, 1em, 0;
+    float: left;
+}
+.pageslider-nav a{
+    float: left;
+    display: block;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-align: center;
+    width: var(--nav-item-width);
+}
+.pageslider-nav a:hover{
+    background-color: var(--nav-hover-bg);
+}
+.pageslider-container{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.pageslider-content{
+    float: left;
+    height: 100%;
+    display: none;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.active{
+    background-color: var(--bg);
+    color: var(--nav-active-text);
+}
+.active:hover{
+    background-color: var(--bg) !important;
+}
+
+.landing-title{
+    font-size:3em;
+    text-align: center;
+}
+.landing-slogan{
+    text-align: center;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:3em;
+}
+.section-container{
+    border-top: 0.05em solid white;
+}
+hr{
+    border-style: solid;
+    border-width: 0.25em;
+    width: 5em;
+    margin-top:-2em;
+    margin-bottom:-0.5em;
+}
+.section-title{
+    background-color: white;
+    display: inline-block;
+    margin-top: -0.05em;
+    color: var(--bg);
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.featured-wrapper{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    display: flex;
+}
+.featured-title{
+    font-size: 2em;
+}
+.featured-item{
+    width: var(--featured-item-width);
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    background-color: var(--bg);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.featured-item:hover{
+    background-color: var(--text);
+    color: var(--bg);
+    transition: background-color 250ms, color 250ms;
+}
