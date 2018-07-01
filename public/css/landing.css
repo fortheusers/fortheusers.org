@@ -36,6 +36,7 @@ body{
     padding-top:15px;
     padding-bottom:15px;
     text-decoration: none;
+    color: var(--nav-text);
     font-size: 1.1em;
     text-align: center;
     width: var(--nav-item-width);
@@ -59,7 +60,7 @@ body{
 
 .active{
     background-color: var(--bg);
-    color: var(--nav-active-text);
+    color: var(--nav-active-text) !important;
 }
 .active:hover{
     background-color: var(--bg) !important;
