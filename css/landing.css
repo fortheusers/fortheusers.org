@@ -8,6 +8,8 @@
     --nav-active-text: white;
     --nav-item-width: 33.33%;
     --featured-grid-item-width: 33.33%;
+    --services-switch-grid-item-width: 33.33%;
+    --services-wiiu-grid-item-width: 20%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -138,6 +140,8 @@ hr{
     margin-right: auto;
     margin-top: 0.2vh;
     display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .grid-title{
     font-size: calc(60% + 1vw);
@@ -146,13 +150,14 @@ hr{
     font-size: calc(30% + 1vw);
 }
 .grid-item{
-    width: var(--featured-grid-item-width);
+    width: 25%;
     text-align: center;
     text-decoration: none;
     color: var(--text);
     background-color: var(--bg);
     padding-top: 2em;
     padding-bottom: 2em;
+    min-width: 200px;
 }
 .grid-item img{
     width: 75%
