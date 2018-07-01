@@ -4,9 +4,11 @@ $(function() {
     if(page != "" && $(page).length != 0 && active == undefined){
         $(page).fadeIn('slow');
         active = page;
+        $(".active").removeClass("active");
+        $("a[href$='" + page + "']").addClass("active");
     }else{
-        $('#_default').fadeIn('slow');
-        active = '#_default';
+        $('#home').fadeIn('slow');
+        active = '#home';
     }
 
     $(window).bind( 'hashchange', function() {
@@ -15,23 +17,21 @@ $(function() {
             $(active).fadeOut('slow', function(){
                 $(page).fadeIn('slow');
             });
-            $(active).attr("style", "display: none;");
             active = page;
         }else{
             if(active != page){
                 $(active).fadeOut('slow', function(){
-                    $("#_default").fadeIn('slow');
+                    $("#home").fadeIn('slow');
                 });
-                $(active).attr("style", "display: none;");
-                active = "#_default";
+                active = "#home";
             }
         }
     });
 
     $(".pageslider-nav a").click(function(){
         if(!$(this).hasClass("nav-popout")){
-            $(".active").removeAttr("class");
-            $(this).attr("class", "active");
+            $(".active").removeClass("active");
+            $(this).addClass("active");
         }
     });
 
