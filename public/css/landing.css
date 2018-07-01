@@ -99,11 +99,14 @@ hr{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 0.2vh;
     display: flex;
 }
 .featured-title{
-    font-size: 2em;
+    font-size: 2.5vw;
+}
+.featured-desc{
+    font-size: 1.1vw;
 }
 .featured-item{
     width: var(--featured-item-width);
@@ -113,6 +116,10 @@ hr{
     background-color: var(--bg);
     padding-top: 2em;
     padding-bottom: 2em;
+}
+.featured-item img{
+    max-width: 75%;
+    max-height: 75%;
 }
 .featured-item:hover{
     background-color: var(--text);
