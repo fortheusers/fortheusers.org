@@ -5,6 +5,6 @@ pages:
   - echo 'Nothing to do...'
   artifacts:
     paths:
-    - /build/crc-32/FTULanding
+    - /builds/crc-32/FTULanding
   only:
   - master
