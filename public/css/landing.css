@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+:root {
+    --bg: #52516B;
+    --text: white;
+    --nav-bg: #eee;
+    --nav-hover-bg: rgb(228, 228, 228);
+    --nav-text: #3a3a3a;
+    --nav-active-text: white;
+    --nav-item-width: 33.33%;
+    --featured-grid-item-width: 33.33%;
+    --services-switch-grid-item-width: 33.33%;
+    --services-wiiu-grid-item-width: 20%;
+}
+
+@media only screen and (max-width: 700px) {
+    .grid-wrapper{
+        display: block !important;
+    }
+    .grid-title{
+        font-size: 3vh !important;
+    }
+    .grid-desc{
+        font-size: 1.6vh !important;
+    }
+    .grid-item{
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+    }
+    .grid-item:hover{
+        background-color: var(--bg) !important;
+        color: var(--text) !important;
+    }
+    .grid-item img{
+        margin-left: auto;
+        margin-right: auto;
+        padding: auto;
+    }
+    .section-container{
+        border-top: none !important;
+    }
+    .section-title{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center;
+        display: block !important
+    }
+    .landing-slogan{
+        width: 100% !important;
+    }
+}
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.pageslider-nav{
+    background: var(--nav-bg);
+    overflow: hidden;
+    width: 100%;
+    margin: 0, 0, 1em, 0;
+    float: left;
+}
+.pageslider-nav a{
+    float: left;
+    display: block;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-decoration: none;
+    color: var(--nav-text);
+    font-size: 1.1em;
+    text-align: center;
+    width: var(--nav-item-width);
+}
+.pageslider-nav a:hover{
+    background-color: var(--nav-hover-bg);
+}
+.pageslider-container{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.pageslider-content{
+    float: left;
+    height: 100%;
+    display: none;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.active{
+    background-color: var(--bg);
+    color: var(--nav-active-text) !important;
+}
+.active:hover{
+    background-color: var(--bg) !important;
+}
+
+.landing-title{
+    font-size:3em;
+    text-align: center;
+}
+.landing-slogan{
+    text-align: center;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:3em;
+}
+.section-container{
+    border-top: 0.05em solid white;
+}
+hr{
+    border-style: solid;
+    border-width: 0.25em;
+    width: 5em;
+    margin-top:-2em;
+    margin-bottom:-0.5em;
+}
+.section-title{
+    background-color: white;
+    display: inline-block;
+    margin-top: -0.05em;
+    color: var(--bg);
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.grid-wrapper{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.2vh;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.grid-title{
+    font-size: calc(60% + 1vw);
+}
+.grid-desc{
+    font-size: calc(30% + 1vw);
+}
+.grid-item{
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    background-color: var(--bg);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    min-width: 200px;
+}
+.grid-item img{
+    width: 75%
+}
+.grid-item:hover{
+    background-color: var(--text);
+    color: var(--bg);
+    transition: background-color 250ms, color 250ms;
+}
