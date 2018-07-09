@@ -167,3 +167,15 @@ hr{
     color: var(--bg);
     transition: background-color 250ms, color 250ms;
 }
+.featured{
+        width: var(--featured-grid-item-width);
+}
+.switch{
+    width: var(--services-switch-grid-item-width);
+}
+.wiiu{
+    width: var(--services-wiiu-grid-item-width);
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
