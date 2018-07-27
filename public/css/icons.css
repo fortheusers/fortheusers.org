@@ -26,3 +26,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.discord-icon
+{
+    padding: 0.75em;
+    content: url('./font/discord-icon.svg');
+}
