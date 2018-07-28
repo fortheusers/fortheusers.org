@@ -61,6 +61,7 @@ html, body
 {
     margin: 0;
     padding: 0;
+    margin-bottom:30px;
 }
 body{
     font-family: 'IBM Plex Sans', sans-serif;
@@ -202,6 +203,11 @@ hr{
     background-color: gray;
     color: white;
     margin-top: 1em;
+    z-index: 9000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height:25px;
 }
 .footer span{
     margin: 1em;
