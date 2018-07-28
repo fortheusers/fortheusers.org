@@ -166,8 +166,7 @@ hr{
     text-decoration: none;
     color: var(--text);
     background-color: var(--bg);
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding : 2em 1em 2em 1em;
     min-width: 200px;
 }
 .grid-item img{
