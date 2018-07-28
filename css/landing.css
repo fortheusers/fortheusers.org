@@ -195,3 +195,14 @@ hr{
 .nav-share-from-item{
     width: calc(var(--nav-item-width) / 5) !important;
 }
+.footer{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    margin-top: 1em;
+}
+.footer span{
+    margin: 1em;
+}
