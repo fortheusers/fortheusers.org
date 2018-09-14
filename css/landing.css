@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
 :root {
-    --bg: #52516B;
+    --bg: #414548; /*#52516B*/
     --text: white;
     --nav-bg: #eee;
     --nav-hover-bg: rgb(228, 228, 228);
