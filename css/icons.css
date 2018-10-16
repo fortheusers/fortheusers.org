@@ -29,6 +29,13 @@
 
 .discord-icon
 {
+    //For Chrome
+    padding: 0.75em;
+    content: url('./font/discord-icon.svg');
+}
+.discord-icon :after
+{
+    //For Firefox
     padding: 0.75em;
     content: url('./font/discord-icon.svg');
 }
