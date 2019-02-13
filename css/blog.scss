@@ -1,0 +1,50 @@
+---
+---
+
+.blog-body {
+    width: 50vw;
+    min-width: 250px;
+    margin: 0 auto;
+
+    a {
+        color: var(--text);
+    }
+    .blog-authors {
+        background: darken(#414548, 5%);
+        padding: 1em;
+        padding-bottom: 0;
+
+        .blog-author {
+            min-height: 7em;
+
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+
+            .icon {
+                float: left;
+                width: 7em;
+                height: 7em;
+                margin-right: 1em;
+                margin-bottom: 1em;
+                flex: 0 0 auto;
+            }
+            .info {
+                margin-bottom: 1em;
+                min-width: 10em;
+                flex: 1 1 15em;
+                .bio {
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 300px) {
+    .blog-body {
+        width: 100%;
+        min-width: 0;
+    }
+}
