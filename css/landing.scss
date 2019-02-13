@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    overflow-wrap: anywhere;
 }
 
 //TODO SCSS variables
@@ -27,43 +28,6 @@ $bg-color: #414548;
     }
     .pageslider-nav a .font-icon{
         display: none;
-    }
-}
-@media only screen and (max-width: 700px) {
-    .grid-wrapper{
-        display: block !important;
-    }
-    .grid-title{
-        font-size: 3vh !important;
-    }
-    .grid-desc{
-        font-size: 1.6vh !important;
-    }
-    .grid-item{
-        padding-left: 2em;
-        padding-right: 2em;
-        text-align: center;
-    }
-    .grid-item:hover{
-        background-color: var(--bg) !important;
-        color: var(--text) !important;
-    }
-    .grid-item img{
-        margin-left: auto;
-        margin-right: auto;
-        padding: auto;
-    }
-    .section-container{
-        border-top: none !important;
-    }
-    .section-title{
-        margin-left: auto !important;
-        margin-right: auto !important;
-        text-align: center;
-        display: block !important
-    }
-    .landing-slogan{
-        width: 100% !important;
     }
 }
 
@@ -155,47 +119,6 @@ hr{
     color: var(--bg);
     padding-left: 1em;
     padding-right: 1em;
-}
-.grid-wrapper{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.2vh;
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-.grid-title{
-    font-size: calc(60% + 1vw);
-}
-.grid-desc{
-    font-size: calc(30% + 1vw);
-}
-.grid-item{
-    width: 25%;
-    text-align: center;
-    text-decoration: none;
-    color: var(--text);
-    background-color: var(--bg);
-    padding : 2em 1em 2em 1em;
-    min-width: 200px;
-}
-.grid-item img{
-    width: 75%
-}
-.grid-item:hover{
-    background-color: var(--text);
-    color: var(--bg);
-    transition: background-color 250ms, color 250ms;
-}
-.featured{
-    width: var(--featured-grid-item-width);
-}
-.switch{
-    width: var(--services-switch-grid-item-width);
-}
-.wiiu{
-    width: var(--services-wiiu-grid-item-width);
 }
 .flex-wrap{
     flex-wrap: wrap;
