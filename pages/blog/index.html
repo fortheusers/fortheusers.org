@@ -12,7 +12,7 @@ permalink: /blog
     <div class="grid-wrapper">
         {% for post in site.categories['updates'] limit:4 %}
         <a class="grid-item featured" href="{{post.url}}">
-            <img src="/img/appstorenx.png">
+            <img src="{{post.img}}">
             <div class="grid-title">{{post.title}}</div>
             <div class="grid-desc">{{post.desc}}</div>
         </a>
@@ -27,7 +27,7 @@ permalink: /blog
     <div class="grid-wrapper">
         {% for post in site.categories['appstore'] limit:4 %}
         <a class="grid-item featured" href="{{post.url}}">
-            <img src="/img/appstorenx.png">
+            <img src="{{post.img}}">
             <div class="grid-title">{{post.title}}</div>
             <div class="grid-desc">{{post.desc}}</div>
         </a>
