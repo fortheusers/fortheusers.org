@@ -7,4 +7,4 @@ user_url: https://compucat.me
 
 icon: /img/icons/compucat.png
 ---
-fgsdh sdgjdhhjj sf jwbjvfr dbvhjb erjvhjxdbv hjbhjceh bb b
+Hardware nerd, Linux user, *linux-wiiu* dev. Also an avid music producer, aspiring chef, and wannabe videographer. He'll go crazy if he ignores the irresistable urge to make things. (Don't you *dare* try and get him to dance!)
