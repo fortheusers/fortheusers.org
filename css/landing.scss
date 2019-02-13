@@ -1,3 +1,13 @@
+---
+---
+
+* {
+    box-sizing: border-box;
+}
+
+//TODO SCSS variables
+$bg-color: #414548;
+
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
 :root {
     --bg: #414548; /*#52516B*/
@@ -196,31 +206,10 @@ hr{
 .nav-share-from-item{
     width: calc(var(--nav-item-width) / 5) !important;
 }
-.footer{
-    padding-top: 1em;
-    padding-bottom: 1em;
+
+footer {
+    background: darken($bg-color, 5%);
     width: 100%;
-    background-color: gray;
-    color: white;
     margin-top: 1em;
-    z-index: 9000;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    font-size: 1.6vw;
-    text-overflow: ellipsis;
-    height:25px;
-}
-@media only screen and (max-width: 460px){
-    .footer{
-        font-size: 5pt;
-    }
-}
-@media only screen and (min-width: 1024px){
-    .footer{
-        font-size: 12pt;
-    }
-}
-.footer span{
-    margin: 1em;
+    padding: 0.5em;
 }
