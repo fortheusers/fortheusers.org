@@ -1,0 +1,16 @@
+{% include head.html %}
+
+<body>
+    {% include nav.html %}
+    <div class="pageslider-container">
+        <h1 class="landing-title">{{page.title}}</h1>
+        <hr>
+        <p class="landing-slogan">{{page.desc}}</p>
+        <div class="blog-body">
+            {{content}}
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+{% include tail.html %}

@@ -1,0 +1,15 @@
+.blog-body {
+    width: 50vw;
+    min-width: 250px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 300px) {
+    .blog-body {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+.blog-body a {
+    color: var(--text);
+}

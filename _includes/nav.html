@@ -1,0 +1,13 @@
+<nav>
+    <div class="pageslider-nav">
+        <a href="/" {% if page.url == "/" %} class="active" {% endif %}>Home</a>
+        <a href="/services" {% if page.url == "/services" %} class="active" {% endif %}>Services</a>
+        <!-- TODO: "contains" sucks -->
+        <a href="/blog" {% if page.url contains "/blog" %} class="active" {% endif %}>Blog</a>
+        <a class="nav-popout nav-share-to-icon" href="https://github.com/fortheusers/" target="_blank">GitHub
+        <a class="nav-popout nav-share-to-icon" href="https://discord.gg/F2PKpEj" target="_blank">Discord
+            <i class="font-icon">&#xf14c;</i>
+        </a>
+        <a class="nav-share-from-item discord-icon" href="https://discordapp.com/invite/F2PKpEj" target="_blank" class="discord-icon"></a>
+    </div>
+</nav>

@@ -1,0 +1,36 @@
+---
+layout: default
+permalink: /blog
+---
+<h1 class="landing-title">Blog</h1>
+<hr>
+<p class="landing-slogan">Gotta write some text. We all love a good chunk of text, right! Text!</p>
+
+<div class="section-container">
+    <h2 class="section-title">SCENE UPDATES</h2>
+    <br>
+    <div class="grid-wrapper">
+        {% for post in site.categories['updates'] limit:4 %}
+        <a class="grid-item featured" href="{{post.url}}">
+            <img src="/img/appstorenx.png">
+            <div class="grid-title">{{post.title}}</div>
+            <div class="grid-desc">{{post.desc}}</div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+<br>
+
+<div class="section-container">
+    <h2 class="section-title">APPSTORE</h2>
+    <br>
+    <div class="grid-wrapper">
+        {% for post in site.categories['appstore'] limit:4 %}
+        <a class="grid-item featured" href="{{post.url}}">
+            <img src="/img/appstorenx.png">
+            <div class="grid-title">{{post.title}}</div>
+            <div class="grid-desc">{{post.desc}}</div>
+        </a>
+        {% endfor %}
+    </div>
+</div>

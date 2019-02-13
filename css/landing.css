@@ -104,7 +104,6 @@ body{
 .pageslider-content{
     float: left;
     height: 100%;
-    display: none;
     width: 100%;
     margin-top: 1.5em;
 }
@@ -180,7 +179,7 @@ hr{
     transition: background-color 250ms, color 250ms;
 }
 .featured{
-        width: var(--featured-grid-item-width);
+    width: var(--featured-grid-item-width);
 }
 .switch{
     width: var(--services-switch-grid-item-width);
