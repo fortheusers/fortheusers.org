@@ -136,3 +136,11 @@ footer {
     margin-top: 1em;
     padding: 0.5em;
 }
+
+.readmore {
+    font-size: 1em;
+    text-align: right;
+    a {
+        color: var(--text);
+    }
+}

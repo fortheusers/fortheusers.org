@@ -1,0 +1,23 @@
+---
+permalink: /blog/updates
+layout: default
+---
+
+<h1 class="landing-title">Updates - Blog</h1>
+<hr>
+<p class="landing-slogan">Gotta write some text. We all love a good chunk of text, right! Text!</p>
+
+<div class="section-container">
+    <h2 class="section-title">POSTS</h2>
+    <br>
+    <div class="grid-wrapper">
+        {% for post in site.categories['updates'] %}
+        <a class="grid-item" href="{{post.url}}">
+            <img src="{{post.img}}">
+            <div class="grid-title">{{post.title}}</div>
+            <div class="grid-desc">{{post.desc}}</div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+<br>
