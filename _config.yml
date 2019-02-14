@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: fortheusers.org
-email: admin@fortheusers.org
+email: fight@fortheusers.org
 description: >- # this means to ignore newlines until "baseurl:"
   ForTheUsers is a group dedicated to helping the homebrew community by
   providing various services and contributions.
