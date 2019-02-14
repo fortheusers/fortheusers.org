@@ -1,7 +1,7 @@
 <nav>
     <div class="pageslider-nav">
         <a href="/" {% if page.url == "/" %} class="active" {% endif %}>Home</a>
-        <a href="/services" {% if page.url == "/services" %} class="active" {% endif %}>Services</a>
+        <a href="/services" {% if page.url == "/services/" %} class="active" {% endif %}>Services</a>
         <!-- TODO: "contains" sucks -->
         <a href="/blog" {% if page.url contains "/blog" %} class="active" {% endif %}>Blog</a>
         <a class="nav-popout nav-share-to-icon" href="https://github.com/fortheusers/" target="_blank">GitHub
