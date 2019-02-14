@@ -11,6 +11,9 @@
     }
     .blog-authors {
         background: darken(#414548, 5%);
+        .secret {
+            color: darken(#414548, 5%);
+        }
         padding: 1em;
         padding-bottom: 0;
 
