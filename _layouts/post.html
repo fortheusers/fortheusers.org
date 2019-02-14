@@ -8,6 +8,7 @@
         <p class="landing-slogan">{{page.desc}}</p>
         <div class="blog-body">
             {{content}}
+            <div class="authors-line">About the Authors</div>
             <div class="blog-authors">
                 {% for author in page.authors %}
                 {% assign author_data = site.author_data | where:"author_id",author | first %}

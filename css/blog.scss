@@ -9,6 +9,9 @@
     a {
         color: var(--text);
     }
+    .authors-line {
+        font-size: 2em;
+    }
     .blog-authors {
         background: darken(#414548, 5%);
         .secret {
@@ -16,6 +19,7 @@
         }
         padding: 1em;
         padding-bottom: 0;
+        margin-top: 1em;
 
         .blog-author {
             min-height: 7em;
