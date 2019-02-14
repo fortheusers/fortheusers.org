@@ -11,14 +11,16 @@ permalink: /blog/
     <br>
     <div class="grid-wrapper">
         {% for post in site.categories['updates'] limit:4 %}
-        <a class="grid-item featured" href="{{post.url}}">
-            <img src="{{post.img}}">
+        <a class="grid-item featured" href="{{post.url | relative_url}}">
+            <img src="{{post.img | relative_url}}">
             <div class="grid-title">{{post.title}}</div>
             <div class="grid-desc">{{post.desc}}</div>
         </a>
         {% endfor %}
     </div>
-    <div class="readmore"><a href="/blog/updates">More Posts</a></div>
+    <div class="readmore">
+        <a href="{{'/blog/updates' | relative_url}}">More Posts</a>
+    </div>
 </div>
 <br>
 
@@ -27,12 +29,14 @@ permalink: /blog/
     <br>
     <div class="grid-wrapper">
         {% for post in site.categories['appstore'] limit:4 %}
-        <a class="grid-item featured" href="{{post.url}}">
-            <img src="{{post.img}}">
+        <a class="grid-item featured" href="{{post.url | relative_url}}">
+            <img src="{{post.img | relative_url}}">
             <div class="grid-title">{{post.title}}</div>
             <div class="grid-desc">{{post.desc}}</div>
         </a>
         {% endfor %}
     </div>
-    <div class="readmore"><a href="/blog/appstore">More Posts</a></div>
+    <div class="readmore">
+        <a href="{{'/blog/appstore' | relative_url}}">More Posts</a>
+    </div>
 </div>

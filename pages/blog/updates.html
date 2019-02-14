@@ -12,8 +12,8 @@ layout: default
     <br>
     <div class="grid-wrapper">
         {% for post in site.categories['updates'] %}
-        <a class="grid-item" href="{{post.url}}">
-            <img src="{{post.img}}">
+        <a class="grid-item" href="{{post.url | relative_url}}">
+            <img src="{{post.img | relative_url}}">
             <div class="grid-title">{{post.title}}</div>
             <div class="grid-desc">{{post.desc}}</div>
         </a>

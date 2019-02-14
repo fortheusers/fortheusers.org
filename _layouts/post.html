@@ -12,7 +12,7 @@
                 {% for author in page.authors %}
                 {% assign author_data = site.author_data | where:"author_id",author | first %}
                     <div class="blog-author">
-                        <img class="icon" src="{{author_data.icon}}" alt="@{{author_data.user}}'s avatar"></img>
+                        <img class="icon" src="{{author_data.icon | relative_url}}" alt="@{{author_data.user}}'s avatar"></img>
                         <div class="info">
                             <span class="name">{{author_data.name}}</span>
                             <a href="{{author_data.user_url}}" class="username">@{{author_data.user}}</a>
