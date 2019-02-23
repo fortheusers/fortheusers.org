@@ -36,8 +36,11 @@ html, body
     margin: 0;
     padding: 0;
     margin-bottom:30px;
-    height: 100%;
 }
+html {
+  height: 100%;
+}
+
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     line-height: 1.5;
