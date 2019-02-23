@@ -27,15 +27,22 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.discord-icon
+.discord-icon, .discord-icon :after
 {
-    //For Chrome
     padding: 0.75em;
     content: url('./font/discord-icon.svg');
 }
-.discord-icon :after
+
+.twitter-icon, .twitter-icon :after
 {
-    //For Firefox
     padding: 0.75em;
-    content: url('./font/discord-icon.svg');
+    content: url('./font/twitter-icon.svg');
 }
+
+.github-icon, .github-icon :after
+{
+    padding: 0.75em;
+    content: url('./font/github-icon.png');
+}
+
+

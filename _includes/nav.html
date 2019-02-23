@@ -4,10 +4,8 @@
         <a href="{{'/services' | relative_url}}" {% if page.url == "/services/" %} class="active" {% endif %}>Services</a>
         <!-- TODO: "contains" sucks -->
         <a href="{{'/blog' | relative_url}}" {% if page.url contains "/blog" %} class="active" {% endif %}>Blog</a>
-        <a class="nav-popout nav-share-to-icon" href="https://github.com/fortheusers/" target="_blank">GitHub
-        <a class="nav-popout nav-share-to-icon" href="https://discord.gg/F2PKpEj" target="_blank">Discord
-            <i class="font-icon">&#xf14c;</i>
-        </a>
+        <a class="nav-share-from-item github-icon" href="https://github.com/fortheusers" target="_blank" class="github-icon"></a>
+        <a class="nav-share-from-item twitter-icon" href="https://twitter.com/wiiubru" target="_blank" class="twitter-icon"></a>
         <a class="nav-share-from-item discord-icon" href="https://discordapp.com/invite/F2PKpEj" target="_blank" class="discord-icon"></a>
     </div>
 </nav>
