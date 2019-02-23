@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   providing various services and contributions.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://fortheusers.org"
-twitter_username: aaaa
+twitter_username: wiiubru
 github_username:  fortheusers
 
 collections:
