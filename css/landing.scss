@@ -1,3 +1,14 @@
+---
+---
+
+* {
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
+
+//TODO SCSS variables
+$bg-color: #414548;
+
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
 :root {
     --bg: #414548; /*#52516B*/
@@ -17,43 +28,6 @@
     }
     .pageslider-nav a .font-icon{
         display: none;
-    }
-}
-@media only screen and (max-width: 700px) {
-    .grid-wrapper{
-        display: block !important;
-    }
-    .grid-title{
-        font-size: 3vh !important;
-    }
-    .grid-desc{
-        font-size: 1.6vh !important;
-    }
-    .grid-item{
-        padding-left: 2em;
-        padding-right: 2em;
-        text-align: center;
-    }
-    .grid-item:hover{
-        background-color: var(--bg) !important;
-        color: var(--text) !important;
-    }
-    .grid-item img{
-        margin-left: auto;
-        margin-right: auto;
-        padding: auto;
-    }
-    .section-container{
-        border-top: none !important;
-    }
-    .section-title{
-        margin-left: auto !important;
-        margin-right: auto !important;
-        text-align: center;
-        display: block !important
-    }
-    .landing-slogan{
-        width: 100% !important;
     }
 }
 
@@ -104,7 +78,6 @@ body{
 .pageslider-content{
     float: left;
     height: 100%;
-    display: none;
     width: 100%;
     margin-top: 1.5em;
 }
@@ -147,47 +120,6 @@ hr{
     padding-left: 1em;
     padding-right: 1em;
 }
-.grid-wrapper{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.2vh;
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-.grid-title{
-    font-size: calc(60% + 1vw);
-}
-.grid-desc{
-    font-size: calc(30% + 1vw);
-}
-.grid-item{
-    width: 25%;
-    text-align: center;
-    text-decoration: none;
-    color: var(--text);
-    background-color: var(--bg);
-    padding : 2em 1em 2em 1em;
-    min-width: 200px;
-}
-.grid-item img{
-    width: 75%
-}
-.grid-item:hover{
-    background-color: var(--text);
-    color: var(--bg);
-    transition: background-color 250ms, color 250ms;
-}
-.featured{
-        width: var(--featured-grid-item-width);
-}
-.switch{
-    width: var(--services-switch-grid-item-width);
-}
-.wiiu{
-    width: var(--services-wiiu-grid-item-width);
-}
 .flex-wrap{
     flex-wrap: wrap;
 }
@@ -197,31 +129,18 @@ hr{
 .nav-share-from-item{
     width: calc(var(--nav-item-width) / 5) !important;
 }
-.footer{
-    padding-top: 1em;
-    padding-bottom: 1em;
+
+footer {
+    background: darken($bg-color, 5%);
     width: 100%;
-    background-color: gray;
-    color: white;
     margin-top: 1em;
-    z-index: 9000;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    font-size: 1.6vw;
-    text-overflow: ellipsis;
-    height:25px;
+    padding: 0.5em;
 }
-@media only screen and (max-width: 460px){
-    .footer{
-        font-size: 5pt;
+
+.readmore {
+    font-size: 1em;
+    text-align: right;
+    a {
+        color: var(--text);
     }
-}
-@media only screen and (min-width: 1024px){
-    .footer{
-        font-size: 12pt;
-    }
-}
-.footer span{
-    margin: 1em;
 }

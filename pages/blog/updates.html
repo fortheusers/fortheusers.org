@@ -1,0 +1,23 @@
+---
+permalink: /blog/updates/
+layout: default
+---
+
+<h1 class="landing-title">Updates - Blog</h1>
+<hr>
+<p class="landing-slogan">News and progress in the homebrew scenes, as well as updates on 4TU projects.</p>
+
+<div class="section-container">
+    <h2 class="section-title">POSTS</h2>
+    <br>
+    <div class="grid-wrapper">
+        {% for post in site.categories['updates'] %}
+        <a class="grid-item" href="{{post.url | relative_url}}">
+            <img src="{{post.img | relative_url}}">
+            <div class="grid-title">{{post.title}}</div>
+            <div class="grid-desc">{{post.desc}}</div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+<br>

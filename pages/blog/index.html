@@ -1,0 +1,42 @@
+---
+layout: default
+permalink: /blog/
+---
+<h1 class="landing-title">Blog</h1>
+<hr>
+<p class="landing-slogan">Updates and news on the homebrew community, 4TU projects and the appstores.</p>
+
+<div class="section-container">
+    <h2 class="section-title">SCENE UPDATES</h2>
+    <br>
+    <div class="grid-wrapper">
+        {% for post in site.categories['updates'] limit:4 %}
+        <a class="grid-item featured" href="{{post.url | relative_url}}">
+            <img src="{{post.img | relative_url}}">
+            <div class="grid-title">{{post.title}}</div>
+            <div class="grid-desc">{{post.desc}}</div>
+        </a>
+        {% endfor %}
+    </div>
+    <div class="readmore">
+        <a href="{{'/blog/updates' | relative_url}}">More Posts</a>
+    </div>
+</div>
+<br>
+
+<div class="section-container">
+    <h2 class="section-title">APPSTORE</h2>
+    <br>
+    <div class="grid-wrapper">
+        {% for post in site.categories['appstore'] limit:4 %}
+        <a class="grid-item featured" href="{{post.url | relative_url}}">
+            <img src="{{post.img | relative_url}}">
+            <div class="grid-title">{{post.title}}</div>
+            <div class="grid-desc">{{post.desc}}</div>
+        </a>
+        {% endfor %}
+    </div>
+    <div class="readmore">
+        <a href="{{'/blog/appstore' | relative_url}}">More Posts</a>
+    </div>
+</div>
