@@ -42,7 +42,7 @@
 .github-icon, .github-icon :after
 {
     padding: 0.75em;
-    content: url('./font/github-icon.png');
+    content: url('./font/github-icon.svg');
 }
 
 
