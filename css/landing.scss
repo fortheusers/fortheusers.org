@@ -36,12 +36,15 @@ html, body
     margin: 0;
     padding: 0;
     margin-bottom:30px;
+    height: 100%;
 }
-body{
+body {
     font-family: 'IBM Plex Sans', sans-serif;
     line-height: 1.5;
     background: var(--bg);
     color: var(--text);
+    min-height: 100%;
+    position: relative;
 }
 
 .pageslider-nav{
@@ -135,6 +138,8 @@ footer {
     width: 100%;
     margin-top: 1em;
     padding: 0.5em;
+    bottom: 0;
+    position: absolute;
 }
 
 .readmore {
