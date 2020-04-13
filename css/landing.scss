@@ -48,6 +48,14 @@ body {
     color: var(--text);
     min-height: 100%;
     position: relative;
+
+    /* flex to grow the content down when needed */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    >.pageslider-container {
+        flex-grow: 1;
+    }
 }
 
 /* This is used to make the icons square */
@@ -93,9 +101,7 @@ $primary-nav-height: 5em;
     }
 }
 .pageslider-container{
-    height: 100%;
     width: 80%;
-    margin: auto;
     overflow: hidden;
 }
 .pageslider-content{
