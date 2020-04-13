@@ -28,10 +28,11 @@
             //color: var(--text);
         }
 
-        &:hover {
+        &:hover, &:focus {
             background-color: var(--text);
             color: var(--bg);
             transition: background-color 150ms, color 150ms;
         }
+        transition: background-color 150ms, color 150ms;
     }
 }
