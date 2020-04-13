@@ -1,8 +1,9 @@
 <nav id="primary-nav">
-    <a class="section-link {% if page.url == "/" %} active {% endif %}" href="{{'/' | relative_url}}" >Home</a>
-    <a class="section-link {% if page.url == "/services/" %} active {% endif %}" href="{{'/services' | relative_url}}">Services</a>
+    <div class="height-fix"></div>
+    <a class="section-link {% if page.url == "/" %} active {% endif %}" href="{{'/' | relative_url}}"><span>Home</span></a>
+    <a class="section-link {% if page.url == "/services/" %} active {% endif %}" href="{{'/services' | relative_url}}"><span>Services</span></a>
     <!-- TODO: "contains" sucks -->
-    <a class="section-link {% if page.url contains "/blog" %} active {% endif %}" href="{{'/blog' | relative_url}}">Blog</a>
+    <a class="section-link {% if page.url contains "/blog" %} active {% endif %}" href="{{'/blog' | relative_url}}"><span>Blog</span></a>
     <a class="icon github-icon" href="https://github.com/fortheusers" target="_blank" class="github-icon"></a>
     <a class="icon twitter-icon" href="https://twitter.com/wiiubru" target="_blank" class="twitter-icon"></a>
     <a class="icon discord-icon" href="https://discordapp.com/invite/F2PKpEj" target="_blank" class="discord-icon"></a>

@@ -58,44 +58,52 @@ body {
     }
 }
 
-/* This is used to make the icons square */
-$primary-nav-height: 5em;
+$primary-nav-row-height: 5em;
 #primary-nav {
     width: 100%;
-    height: $primary-nav-height;
+    min-height: $primary-nav-row-height;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: stretch;
+    flex-flow: row wrap;
+    /* small hack for multi-row aesthetics */
+    justify-content: center;
 
-    a {
+    /* All children (nav items) */
+    > * {
         display: block;
+        height: $primary-nav-row-height;
+
         &.section-link {
             flex-grow: 1;
 
-            /* NOTE: only change font-size here, in case $primary-nav-height is
-               ems! Don't want to stuff up the &.icon square bit. */
-            color: var(--nav-text);
+            /* NOTE: only change font-size here, in case $primary-nav-row-height
+               is in ems.*/
+            > span {
+                color: var(--nav-text);
+                font-size: 1.5em;
+            }
+            &.active > span {
+                color: var(--nav-active-text);
+            }
             text-decoration: none;
-            font-size: 1.5em;
 
-            /* Vertical centering. Feels a bit weird to use flex for this...
-               but at least this doesn't need another <span> */
+            /* Vertical centering. Feels a bit weird to use flex for this... */
             display: flex;
             justify-content: center;
             align-items: center;
         }
         /* Make icons square */
         &.icon {
-            width: $primary-nav-height;
+            width: $primary-nav-row-height;
         }
 
         background: var(--nav-bg);
+        transition: background-color 150ms;
         &:hover, &:active, &:focus {
             background: var(--nav-hover-bg);
+            transition: background-color 150ms;
         }
-        &.active{
+        &.active {
             background: var(--bg);
-            color: var(--nav-active-text);
             &:hover, &:active, &:focus {}
         }
     }
