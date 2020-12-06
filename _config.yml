@@ -23,7 +23,7 @@ url: "https://fortheusers.org"
 twitter_username: wiiubru
 github_username:  fortheusers
 
-include: [".well-known"]
+include: [".well-known", "ads.txt"]
 
 collections:
     - author_data
