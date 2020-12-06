@@ -1,0 +1,3 @@
+google.com, pub-7623664678937879, DIRECT, f08c47fec0942fa0
+google.com, pub-8148658375496745, DIRECT, f08c47fec0942fa0
+subdomain=apps.fortheusers.org
