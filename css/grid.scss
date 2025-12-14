@@ -1,6 +1,15 @@
 ---
 ---
 
+#home {
+    .grid-item {
+        img {
+            background-color: ghostwhite;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
 .grid-wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -10,6 +19,7 @@
         flex: 0 0 auto;
         width: 25%;
         min-width: 200px;
+        margin-bottom: 2em;
 
         padding: 1em;
 
@@ -21,7 +31,8 @@
             width: 50%;
         }
         .grid-title {
-            font-size: 2em;
+            font-size: 1.5em;
+            margin: 0.2em;
             //color: var(--text);
         }
         .grid-desc {

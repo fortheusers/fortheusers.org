@@ -16,6 +16,7 @@ layout: default
             <img src="{{post.img | relative_url}}">
             <div class="grid-title">{{post.title}}</div>
             <div class="grid-desc">{{post.desc}}</div>
+            <div class="grid-date">{{post.date | date: '%B %d, %Y'}}</div>
         </a>
         {% endfor %}
     </div>

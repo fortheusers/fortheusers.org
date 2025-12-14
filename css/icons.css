@@ -33,12 +33,6 @@
     content: url('./font/discord-icon.svg');
 }
 
-.twitter-icon, .twitter-icon :after
-{
-    padding: 0.75em;
-    content: url('./font/twitter-icon.svg');
-}
-
 .github-icon, .github-icon :after
 {
     padding: 0.75em;

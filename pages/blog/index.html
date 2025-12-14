@@ -7,7 +7,7 @@ permalink: /blog/
 <p class="landing-slogan">Updates and news on the homebrew community, 4TU projects and the appstores.</p>
 
 <div class="section-container">
-    <h2 class="section-title">SCENE UPDATES</h2>
+    <h2 class="section-title">POSTS</h2>
     <br>
     <div class="grid-wrapper">
         {% for post in site.categories['updates'] limit:4 %}
@@ -15,6 +15,7 @@ permalink: /blog/
             <img src="{{post.img | relative_url}}">
             <div class="grid-title">{{post.title}}</div>
             <div class="grid-desc">{{post.desc}}</div>
+            <div class="grid-date">{{post.date | date: '%B %d, %Y'}}</div>
         </a>
         {% endfor %}
     </div>
@@ -22,21 +23,4 @@ permalink: /blog/
         <a href="{{'/blog/updates' | relative_url}}">More Posts</a>
     </div>
 </div>
-<br>
 
-<div class="section-container">
-    <h2 class="section-title">APPSTORE</h2>
-    <br>
-    <div class="grid-wrapper">
-        {% for post in site.categories['appstore'] limit:4 %}
-        <a class="grid-item featured" href="{{post.url | relative_url}}">
-            <img src="{{post.img | relative_url}}">
-            <div class="grid-title">{{post.title}}</div>
-            <div class="grid-desc">{{post.desc}}</div>
-        </a>
-        {% endfor %}
-    </div>
-    <div class="readmore">
-        <a href="{{'/blog/appstore' | relative_url}}">More Posts</a>
-    </div>
-</div>
